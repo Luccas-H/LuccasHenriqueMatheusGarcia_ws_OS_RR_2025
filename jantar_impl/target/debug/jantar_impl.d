@@ -1,0 +1,1 @@
+C:\Users\lucca\OneDrive\Área\ de\ Trabalho\Sistemas-Operacionais\LuccasHenriqueMatheusGarcia_ws_OS_RR_2025\jantar_impl\target\debug\jantar_impl.exe: C:\Users\lucca\OneDrive\Área\ de\ Trabalho\Sistemas-Operacionais\LuccasHenriqueMatheusGarcia_ws_OS_RR_2025\jantar_impl\src\main.rs
