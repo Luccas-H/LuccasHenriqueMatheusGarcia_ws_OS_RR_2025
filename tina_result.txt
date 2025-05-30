@@ -1,0 +1,169 @@
+Tina version 3.8.5 -- 01/16/25 -- LAAS/CNRS
+
+mode -W
+
+INPUT NET ------------------------------------------------------- 
+
+parsed net tina_export_for_tool
+
+15 places, 10 transitions, 40 arcs
+
+net tina_export_for_tool
+tr _T_0_ [0,0] Comer_1  -> Garfo_0 Garfo_1 Pensar_1 
+tr _T_1_ [0,0] Comer_2  -> Garfo_1 Garfo_2 Pensar_2 
+tr _T_2_ [0,0] Comer_3  -> Garfo_2 Garfo_3 Pensar_3 
+tr _T_3_ [0,0] Comer_4  -> Garfo_3 Garfo_4 Pensar_4 
+tr _T_4_ [0,0] Garfo_2 Garfo_3 Pensar_3  -> Comer_3 
+tr _T_5_ [0,0] Garfo_3 Garfo_4 Pensar_4  -> Comer_4 
+tr _T_6_ [0,0] Garfo_1 Garfo_2 Pensar_2  -> Comer_2 
+tr _T_7_ [0,0] Garfo_0 Garfo_1 Pensar_1  -> Comer_1 
+tr _T_8_ [0,0] Garfo_0 Garfo_4 Pensar_0  -> Comer_0 
+tr _T_9_ [0,0] Comer_0  -> Garfo_0 Garfo_4 Pensar_0 
+pl Garfo_0 (1)
+pl Garfo_1 (1)
+pl Garfo_2 (1)
+pl Garfo_3 (1)
+pl Garfo_4 (1)
+pl Pensar_0 (1)
+pl Pensar_1 (1)
+pl Pensar_2 (1)
+pl Pensar_3 (1)
+pl Pensar_4 (1)
+
+0.000s
+
+REACHABILITY ANALYSIS ------------------------------------------- 
+
+bounded
+
+11 classe(s), 30 transition(s)
+
+CLASSES:
+
+class 0
+    marking
+	Garfo_0 Garfo_1 Garfo_2 Garfo_3 Garfo_4 Pensar_0 Pensar_1 Pensar_2 Pensar_3 Pensar_4
+    domain
+	0 <= _T_4_ <= 0
+	0 <= _T_5_ <= 0
+	0 <= _T_6_ <= 0
+	0 <= _T_7_ <= 0
+	0 <= _T_8_ <= 0
+
+class 1
+    marking
+	Comer_3 Garfo_0 Garfo_1 Garfo_4 Pensar_0 Pensar_1 Pensar_2 Pensar_4
+    domain
+	0 <= _T_2_ <= 0
+	0 <= _T_7_ <= 0
+	0 <= _T_8_ <= 0
+
+class 2
+    marking
+	Comer_4 Garfo_0 Garfo_1 Garfo_2 Pensar_0 Pensar_1 Pensar_2 Pensar_3
+    domain
+	0 <= _T_3_ <= 0
+	0 <= _T_6_ <= 0
+	0 <= _T_7_ <= 0
+
+class 3
+    marking
+	Comer_2 Garfo_0 Garfo_3 Garfo_4 Pensar_0 Pensar_1 Pensar_3 Pensar_4
+    domain
+	0 <= _T_1_ <= 0
+	0 <= _T_5_ <= 0
+	0 <= _T_8_ <= 0
+
+class 4
+    marking
+	Comer_1 Garfo_2 Garfo_3 Garfo_4 Pensar_0 Pensar_2 Pensar_3 Pensar_4
+    domain
+	0 <= _T_0_ <= 0
+	0 <= _T_4_ <= 0
+	0 <= _T_5_ <= 0
+
+class 5
+    marking
+	Comer_0 Garfo_1 Garfo_2 Garfo_3 Pensar_1 Pensar_2 Pensar_3 Pensar_4
+    domain
+	0 <= _T_4_ <= 0
+	0 <= _T_6_ <= 0
+	0 <= _T_9_ <= 0
+
+class 6
+    marking
+	Comer_1 Comer_3 Garfo_4 Pensar_0 Pensar_2 Pensar_4
+    domain
+	0 <= _T_0_ <= 0
+	0 <= _T_2_ <= 0
+
+class 7
+    marking
+	Comer_0 Comer_3 Garfo_1 Pensar_1 Pensar_2 Pensar_4
+    domain
+	0 <= _T_2_ <= 0
+	0 <= _T_9_ <= 0
+
+class 8
+    marking
+	Comer_2 Comer_4 Garfo_0 Pensar_0 Pensar_1 Pensar_3
+    domain
+	0 <= _T_1_ <= 0
+	0 <= _T_3_ <= 0
+
+class 9
+    marking
+	Comer_1 Comer_4 Garfo_2 Pensar_0 Pensar_2 Pensar_3
+    domain
+	0 <= _T_0_ <= 0
+	0 <= _T_3_ <= 0
+
+class 10
+    marking
+	Comer_0 Comer_2 Garfo_3 Pensar_1 Pensar_3 Pensar_4
+    domain
+	0 <= _T_1_ <= 0
+	0 <= _T_9_ <= 0
+
+
+REACHABILITY GRAPH:
+
+0 -> _T_4_ in [0,0]/1, _T_5_ in [0,0]/2, _T_6_ in [0,0]/3, _T_7_ in [0,0]/4, _T_8_ in [0,0]/5
+1 -> _T_2_ in [0,0]/0, _T_7_ in [0,0]/6, _T_8_ in [0,0]/7
+2 -> _T_3_ in [0,0]/0, _T_6_ in [0,0]/8, _T_7_ in [0,0]/9
+3 -> _T_1_ in [0,0]/0, _T_5_ in [0,0]/8, _T_8_ in [0,0]/10
+4 -> _T_0_ in [0,0]/0, _T_4_ in [0,0]/6, _T_5_ in [0,0]/9
+5 -> _T_4_ in [0,0]/7, _T_6_ in [0,0]/10, _T_9_ in [0,0]/0
+6 -> _T_0_ in [0,0]/1, _T_2_ in [0,0]/4
+7 -> _T_2_ in [0,0]/5, _T_9_ in [0,0]/1
+8 -> _T_1_ in [0,0]/2, _T_3_ in [0,0]/3
+9 -> _T_0_ in [0,0]/2, _T_3_ in [0,0]/4
+10 -> _T_1_ in [0,0]/5, _T_9_ in [0,0]/3
+
+0.000s
+
+LIVENESS ANALYSIS ----------------------------------------------- 
+
+possibly live
+possibly reversible
+
+0 dead classe(s), 11 live classe(s)
+0 dead transition(s), 10 live transition(s)
+
+STRONG CONNECTED COMPONENTS:
+
+0 : 10 9 8 7 6 5 4 3 2 1 0
+
+SCC GRAPH:
+
+0 -> _T_1_/0, _T_9_/0, _T_0_/0, _T_3_/0, _T_2_/0, _T_4_/0, _T_6_/0, _T_5_/0, _T_8_/0, _T_7_/0
+
+0.000s
+
+ANALYSIS COMPLETED ---------------------------------------------- 
+
+# net tina_export_for_tool, 15 places, 10 transitions, 40 arcs         #
+# bounded, possibly live, possibly reversible                          #
+# abstraction        count      props      psets       dead       live #
+#      states           11         15          ?          0         11 # 
+# transitions           30         10          ?          0         10 #

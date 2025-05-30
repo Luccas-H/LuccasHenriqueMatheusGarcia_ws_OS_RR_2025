@@ -1,0 +1,28 @@
+net tina_export_for_tool
+tr _T_0_ [0,0] Comer_1 -> Garfo_0 Garfo_1 Pensar_1 
+tr _T_1_ [0,0] Comer_2 -> Garfo_2 Garfo_1 Pensar_2 
+tr _T_2_ [0,0] Comer_3 -> Garfo_2 Garfo_3 Pensar_3 
+tr _T_3_ [0,0] Comer_4 -> Pensar_4 Garfo_3 Garfo_4 
+tr _T_4_ [0,0] Garfo_3 Garfo_2 Pensar_3 -> Comer_3 
+tr _T_5_ [0,0] Pensar_4 Garfo_3 Garfo_4 -> Comer_4 
+tr _T_6_ [0,0] Garfo_2 Pensar_2 Garfo_1 -> Comer_2 
+tr _T_7_ [0,0] Garfo_1 Garfo_0 Pensar_1 -> Comer_1 
+tr _T_8_ [0,0] Pensar_0 Garfo_4 Garfo_0 -> Comer_0 
+tr _T_9_ [0,0] Comer_0 -> Pensar_0 Garfo_4 Garfo_0 
+
+pl Comer_1 (0)
+pl Pensar_1 (1)
+pl Garfo_0 (1)
+pl Comer_2 (0)
+pl Pensar_2 (1)
+pl Garfo_2 (1)
+pl Pensar_3 (1)
+pl Comer_3 (0)
+pl Comer_4 (0)
+pl Pensar_4 (1)
+pl Garfo_3 (1)
+pl Garfo_1 (1)
+pl Pensar_0 (1)
+pl Comer_0 (0)
+pl Garfo_4 (1)
+
