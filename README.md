@@ -9,7 +9,6 @@ Além da implementação da simulação, o projeto inclui um **diagrama de redes
 O problema envolve **N filósofos** sentados ao redor de uma mesa circular. Entre cada par de filósofos, há um **garfo**. Cada filósofo pode estar em um dos três estados:
 
 - **Pensando**
-- **Com Fome**
 - **Comendo**
 
 Para comer, um filósofo precisa de **dois garfos** (o da esquerda e o da direita). O desafio é garantir que não ocorra **deadlock (impasse)** ou **starvation (inanição)**.
@@ -19,13 +18,14 @@ Para comer, um filósofo precisa de **dois garfos** (o da esquerda e o da direit
 - Simular o comportamento dos filósofos em tempo real.
 - Garantir que a solução seja livre de impasses e inanição.
 - Modelar o sistema usando **Redes de Petri** no **Snoopy**.
+- Ultilizar a Rede de Petri para gerar TINA e fazer análise.
 
 ## 🛠️ Tecnologias Utilizadas
 
 - Rust
-- Threading / Semáforos / Monitores
+- Threading / Semáforos / Mutex
 - Snoopy (para modelagem de Redes de Petri)
-- Graphviz (opcional para visualização gráfica)
+
 
 ## 📁 Estrutura do Repositório
 
