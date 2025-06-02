@@ -29,3 +29,8 @@ Para comer, um filósofo precisa de **dois garfos** (o da esquerda e o da direit
 
 ## 📁 Estrutura do Repositório
 
+Rede_de_Petri --> Temos a rede de petri feita no snoopy e a TINa para análise
+Jantar_impl --> Implementação em Rust do problema
+ReadMe.md --> Essse arquivo
+Slides - Jantar dos Filósofos.pdf - Apresentação teórica do problema
+
